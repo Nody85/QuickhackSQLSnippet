@@ -1,0 +1,3 @@
+UPDATE TargetTable
+   SET TargetTable.[Field1]  = SourceTable.[Field1]
+   FROM [LocalDatabase].[dbo].[LocalTable] as TargetTable INNER JOIN [RemoteServer].[RemoteDatabase].[dbo].[RemoteTable] as SourceTable ON TargetTable.[Field1] = SourceTable.[Field1]
